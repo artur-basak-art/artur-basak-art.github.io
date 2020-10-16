@@ -12,21 +12,19 @@
 
         <link rel="shortcut icon" href="assets/meta/favicon.ico">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/meta/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="96x96" href="assets/meta/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/meta/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/meta/favicon-16x16.png">
         <link rel="manifest" href="assets/meta/site.webmanifest">
 
-        <link rel="mask-icon" href="assets/meta/safari-pinned-tab.svg" color="#454C4E">
         <meta name="apple-mobile-web-app-title" content="A.Basak Art Gallery">
         <meta name="apple-mobile-web-app-status-bar-style" content="#1d1e20">
 
         <meta name="msapplication-TileColor" content="#00aba9">
         <meta name="msapplication-config" content="assets/meta/static/meta/browserconfig.xml">
 
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Charcoal graphic works dedicated to the Belarusian folklore, myths and legends">
+        <meta name="keywords" content="Artur Basak artist,художник Артур Басак,мастак Артур Басак,графика,уголь,беларуский фольклор,мифы и легенды Беларуси,graphics,charcoal,Belarusian folklore,myths and legends of Belarus,графіка,вугаль,беларускі фальклор,міфы і легенды Беларусі">
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@ArturBasak">
@@ -36,7 +34,7 @@
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://arturbasak.art">
         <meta property="og:image" content="https://arturbasak.art/assets/meta/cover.png">
-        <meta property="og:description" content="">
+        <meta property="og:description" content="Charcoal graphic works dedicated to the Belarusian folklore, myths and legends">
         <meta property="og:locale" content="en_EN">
 
         <style>
@@ -44,6 +42,7 @@
                 display: flex;
                 align-items: flex-start;
                 justify-content: flex-start;
+                min-width: 280px;
                 color: #1d1e20;
                 font-family: "Helvetica Neue", Helvetica, sans-serif;
             }
@@ -121,11 +120,62 @@
                 color: white;
                 background: #1d1e20;
                 text-decoration: none;
+                pointer-events: none;
             }
 
             a[aria-current="true"]:hover {
                 opacity: 1;
                 cursor: default;
+            }
+
+            @media all and (max-width: 950px){
+                header, footer, nav {
+                    position: static;
+                }
+
+                body {
+                    flex-direction: column;
+                }
+
+                .gallery {
+                    align-items: flex-start;
+                    justify-content: center;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                figure {
+                    width: 100%;
+                    margin: 0;
+                    padding: 16px;
+                    text-align: center;
+                }
+
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+
+                img a, img a:focus {
+                    outline: none;
+                }
+
+                footer,
+                figcaption {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin: 0;
+                }
+
+                li {
+                    margin: 12px 15px 0 0;
+                }
             }
         </style>
     </head>
@@ -135,7 +185,7 @@
             <h2>Personal Art Gallery</h2>
             <nav>
                 <ul>
-                    <li><a aria-current="true" href="index.html">Paintings</a></li>
+                    <li><a aria-current="true" href="/">Paintings</a></li>
                     <li><a href="contacts.html">Contacts</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
@@ -144,38 +194,38 @@
         <main>
             <div class="gallery">
                 <figure>
-                    <a href="./assets/stribog.jpg" target="_blank">
-                        <img src="./assets/stribog.jpg" alt="">
+                    <a href="./assets/sacrifice-to-stribog.jpg" target="_blank">
+                        <img src="./assets/sacrifice-to-stribog.jpg" alt="On the edge of a cliff, a young girl prepares to sacrifice herself to the wind god / На краі абрыву маладая дзяўчына рыхтуецца прынесці сябе ў ахвяру богу ветру">
                     </a>
                     <figcaption><span lang="be">Ахвяра Стрыбогу</span> / Sacrifice to Stribog, charcoal, 2020</figcaption>
                 </figure>
                 <figure>
-                    <a href="./assets/panna.jpg" target="_blank">
-                        <img src="./assets/panna.jpg" alt="">
+                    <a href="./assets/the-black-maiden-of-nesvizh.jpg" target="_blank">
+                        <img src="./assets/the-black-maiden-of-nesvizh.jpg" alt="A fascist patrol near the moat of the Nesvizh castle notices the ghost of Barbara Radziwill / Фашысцкі патруль каля рова нясвіжскага замка заўважае прывід Барбары Радзівіл">
                     </a>
                     <figcaption><span lang="be">Чорная панна Нясвіжа</span> / The Black Maiden of Nesvizh, charcoal, 2020</figcaption>
                 </figure>
                 <figure>
-                    <a href="./assets/navka.jpg" target="_blank">
-                        <img src="./assets/navka.jpg" alt="">
+                    <a href="./assets/navka-southern-bogs.jpg" target="_blank">
+                        <img src="./assets/navka-southern-bogs.jpg" alt="A rider with a child meets a ghost in the wilderness / Вершнік з дзіцем сустракае ў глухія балотах прывіда">
                     </a>
                     <figcaption><span lang="be">Наўка. Паўдневыя балоты</span> / Nav. Southern bogs, charcoal, 2020</figcaption>
                 </figure>
                 <figure>
-                    <a href="./assets/tur.jpg" target="_blank">
-                        <img src="./assets/tur.jpg" alt="">
+                    <a href="./assets/belarusian-taurus.jpg" target="_blank">
+                        <img src="./assets/belarusian-taurus.jpg" alt="Huge taurus suddenly bursts out of a snowy forest / Велізарны тур раптам выбягае з заснежанага лесу">
                     </a>
                     <figcaption><span lang="be">Тур. Нечаканая сустрэча</span> / Taurus. An unexpected meeting, charcoal, 2020</figcaption>
                 </figure>
                 <figure>
                     <a href="./assets/grodno_golem.jpg" target="_blank">
-                        <img src="./assets/grodno_golem.jpg" alt="">
+                        <img src="./assets/grodno_golem.jpg" alt="In the old quarter, the clay golem moves confidently to meet the detective / У старым квартале гліняны Голем ўпэўнена рухаецца на сустрэч дэтэктыву">
                     </a>
                     <figcaption><span lang="be">Гарадзенскі голем</span> / Hrodna golem, charcoal, 2020</figcaption>
                 </figure>
                 <figure>
-                    <a href="./assets/troll.jpg" target="_blank">
-                        <img src="./assets/troll.jpg" alt="">
+                    <a href="./assets/the-forest-troll-goes-home.jpg" target="_blank">
+                        <img src="./assets/the-forest-troll-goes-home.jpg" alt="In the thicket of the forest, a forest troll climbs from the river to its dilapidated house / У гушчары лесу лясной троль лезе ад ракі да свайго напаўразбітага дому">
                     </a>
                     <figcaption><span lang="be">Лясны троль ідзе дадому</span> / The forest troll goes home, charcoal, 2016</figcaption>
                 </figure>
