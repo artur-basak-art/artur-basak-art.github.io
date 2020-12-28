@@ -43,11 +43,12 @@
         }
 
         body {
+            --black-color: #1d1e20;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             min-width: 280px;
-            color: #1d1e20;
+            color: var(--black-color);
             font-family: "Helvetica Neue", Helvetica, sans-serif;
         }
 
@@ -96,8 +97,8 @@
 
         a.thing, a.thing picture, a.thing img {
             display: block;
-            height: 450px;
-            width: 577px;
+            height: 400px;
+            width: auto;
             max-width: 577px;
         }
 
@@ -107,12 +108,15 @@
         }
 
         img {
-            border-radius: 6px;
+            border-radius: 8px;
+            border: 24px solid var(--black-color);
+            box-shadow: 6px 6px 7px 0 #0000002e;
+            padding: 48px;
             filter: grayscale(2) contrast(1.3);
         }
 
         img:hover {
-            cursor: pointer;
+            cursor: zoom-in;
         }
 
         nav {
@@ -146,7 +150,7 @@
         }
 
         a, a:hover, a:visited, a:active {
-            color: black;
+            color: var(--black-color);
             padding: 2px;
         }
 
@@ -156,7 +160,7 @@
 
         a[aria-current="true"] {
             color: white;
-            background: #1d1e20;
+            background: var(--black-color);
             text-decoration: none;
             pointer-events: none;
         }
@@ -241,6 +245,14 @@
 </header>
 <main>
     <div class="gallery">
+        <figure>
+            <a class="thing" href="./assets/wood-goblin.png" target="_blank">
+                <picture>
+                    <img src="./assets/wood-goblin.png" decoding="async" loading="lazy">
+                </picture>
+            </a>
+            <figcaption><span lang="be">Сцежкамі лясуна</span> / The paths of the wood goblin, charcoal, chalk 2020</figcaption>
+        </figure>
         <figure>
             <a class="thing" href="./assets/the-magi-near-the-idol-of-perun.jpg" target="_blank">
                 <picture>
