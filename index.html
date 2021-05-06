@@ -1,350 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Artur Basak - Personal Art Gallery</title>
-    <meta charset="utf-8">
+	<title>Artur Basak - Personal Art Gallery</title>
+	<meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="index, follow">
 
-    <meta name="application-name" content="A.Basak Art Gallery">
-    <meta name="theme-color" content="#1d1e20">
+	<meta name="application-name" content="A.Basak Art Gallery">
+	<meta name="theme-color" content="#1d1e20">
 
-    <link rel="shortcut icon" href="assets/meta/favicon.ico">
+	<link rel="shortcut icon" href="assets/meta/favicon.ico">
 
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/meta/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/meta/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/meta/favicon-16x16.png">
-    <link rel="manifest" href="assets/meta/site.webmanifest">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/meta/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/meta/favicon-16x16.png">
+	<link rel="manifest" href="assets/meta/site.webmanifest">
 
-    <meta name="apple-mobile-web-app-title" content="A.Basak Art Gallery">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1d1e20">
+	<meta name="apple-mobile-web-app-title" content="A.Basak Art Gallery">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1d1e20">
 
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-config" content="assets/meta/static/meta/browserconfig.xml">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-config" content="assets/meta/browserconfig.xml">
 
-    <meta name="description" content="Charcoal graphic works dedicated to the Belarusian folklore, myths and legends">
-    <meta name="keywords" content="Artur Basak artist,художник Артур Басак,мастак Артур Басак,графика,уголь,беларуский фольклор,мифы и легенды Беларуси,graphics,charcoal,Belarusian folklore,myths and legends of Belarus,графіка,вугаль,беларускі фальклор,міфы і легенды Беларусі">
+	<meta name="description" content="Digital graphic works dedicated to the Belarusian folklore, myths and legends">
+	<meta name="keywords" content="Artur Basak artist,художник Артур Басак,мастак Артур Басак,графика,нячысцікі,беларуский фольклор,мифы и легенды Беларуси,graphics,charcoal,Belarusian folklore,myths and legends of Belarus,графіка,вугаль,беларускі фальклор,міфы і легенды Беларусі">
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@ArturBasak">
-    <meta name="twitter:creator" content="@ArturBasak">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@ArturBasak">
+	<meta name="twitter:creator" content="@ArturBasak">
 
-    <meta property="og:title" content="Artur Basak - Personal Art Gallery">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://arturbasak.art">
-    <meta property="og:image" content="https://arturbasak.art/assets/meta/cover.png">
-    <meta property="og:description" content="Charcoal graphic works dedicated to the Belarusian folklore, myths and legends">
-    <meta property="og:locale" content="en_EN">
+	<meta property="og:title" content="Artur Basak - Art Gallery">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://arturbasak.art">
+	<meta property="og:description" content="Digital graphic works dedicated to the Belarusian folklore, myths and legends">
+	<meta property="og:locale" content="en_EN">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/build/bundle.css'>
 
-        body {
-            --black-color: #1d1e20;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            min-width: 280px;
-            color: var(--black-color);
-            font-family: "Helvetica Neue", Helvetica, sans-serif;
-        }
-
-        h1, h2 {
-            font-weight: 400;
-            margin: 10px 0;
-        }
-
-        h2 {
-            font-size: 16px;
-        }
-
-        .gallery {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-left: 320px;
-        }
-
-        figure {
-            border-radius: 6px;
-            margin: 16px;
-        }
-
-        picture {
-            background-color: #fff;
-            background-image: url(./assets/tenor.gif);
-            background-position: center;
-            background-size: 56px 56px;
-            background-repeat: no-repeat;
-        }
-
-        a.thing {
-            padding: 0;
-            margin-bottom: 8px;
-        }
-
-        a:focus {
-            outline: 2px dotted black;
-        }
-
-        a.thing:focus {
-            outline-offset: 4px;
-        }
-
-        a.thing, a.thing picture, a.thing img {
-            display: block;
-            height: 450px;
-            width: 577px;
-            max-width: 577px;
-        }
-
-        a.vertical, a.vertical picture, a.vertical img {
-            width: 345px;
-            height: 450px;
-        }
-
-        img {
-            border-radius: 8px;
-            border: 24px solid var(--black-color);
-            box-shadow: 6px 6px 7px 0 #0000002e;
-            padding: 48px;
-            filter: grayscale(2) contrast(1.3);
-        }
-
-        img:hover {
-            cursor: zoom-in;
-        }
-
-        nav {
-            position: fixed;
-        }
-
-        header {
-            position: fixed;
-            padding: 16px;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            padding: 16px;
-            color: #aaaaaa;
-        }
-
-        figcaption {
-            max-width: 600px;
-        }
-
-        ul {
-            list-style: none;
-            margin-top: 40px;
-            padding-left: 0;
-        }
-
-        li {
-            margin: 12px 0;
-        }
-
-        a, a:hover, a:visited, a:active {
-            color: var(--black-color);
-            padding: 2px;
-        }
-
-        nav a:hover {
-            opacity: 0.6;
-        }
-
-        a[aria-current="true"] {
-            color: white;
-            background: var(--black-color);
-            text-decoration: none;
-            pointer-events: none;
-        }
-
-        a[aria-current="true"]:hover {
-            opacity: 1;
-            cursor: default;
-        }
-
-        @media all and (max-width: 950px){
-            header, footer, nav {
-                position: static;
-            }
-
-            body {
-                flex-direction: column;
-            }
-
-            .gallery {
-                align-items: flex-start;
-                justify-content: center;
-                width: 100%;
-                margin: 0;
-            }
-
-            figure {
-                width: 100%;
-                margin: 0;
-                padding: 16px;
-                text-align: center;
-            }
-
-            a.vertical, a.vertical picture, a.vertical img,
-            a.thing, a.thing picture, a.thing img {
-                height: auto;
-                width: 100%;
-            }
-
-            img a, img a:focus {
-                outline: none;
-            }
-
-            footer,
-            figcaption {
-                width: 100%;
-                max-width: initial;
-                text-align: center;
-            }
-
-            ul {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                margin: 0;
-            }
-
-            li {
-                margin: 12px 15px 0 0;
-            }
-        }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180703757-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-180703757-1');
-    </script>
+	<script defer src='/build/bundle.js'></script>
 </head>
+
 <body>
-<header>
-    <h1>Artur Basak</h1>
-    <h2>Personal Art Gallery</h2>
-    <nav>
-        <ul>
-            <li><a aria-current="true" href="/">Paintings</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <div class="gallery">
-        <figure>
-            <a class="thing" href="./assets/wood-goblin.png" target="_blank">
-                <picture>
-                    <img src="./assets/wood-goblin.png" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Сцежкамі лясуна</span> / The paths of the wood goblin, charcoal, chalk 2020</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/the-magi-near-the-idol-of-perun.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/the-magi-near-the-idol-of-perun.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Чарадзей каля ідала Пяруну</span> / The Magi near the idol of Perun, charcoal, 2020</figcaption>
-        </figure>
-        <figure>
-            <a class="thing vertical" href="./assets/sacrifice-to-stribog.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/sacrifice-to-stribog.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Ахвяра Стрыбогу</span> / Sacrifice to Stribog, charcoal, 2020</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/the-black-maiden-of-nesvizh.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/the-black-maiden-of-nesvizh.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Чорная панна Нясвіжа</span> / The Black Maiden of Nesvizh, charcoal, 2020</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/navka-southern-bogs.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/navka-southern-bogs.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Наўка. Паўдневыя балоты</span> / Nav. Southern bogs, charcoal, 2020</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/belarusian-taurus.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/belarusian-taurus.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Тур. Нечаканая сустрэча</span> / Taurus. An unexpected meeting, charcoal, 2020</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/grodno_golem.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/grodno_golem.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Гарадзенскі голем</span> / Hrodna golem, charcoal, 2020</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/the-ghosts-of-the-lida-castle-came-for-prince-koribut.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/the-ghosts-of-the-lida-castle-came-for-prince-koribut.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Прывіды Лідскага замка прыйшлі за князем Карыбутам</span> / The ghosts of the Lida castle came for Prince Koribut, charcoal, 2020</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/wild-boar-light.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/wild-boar-light.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Святло дзікоў</span> / Wild boar light, pencil, 2016</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/the-crusader-and-the-living-tree.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/the-crusader-and-the-living-tree.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Крыжак і жывое дрэва</span> / The crusader and the living tree, pencil, 2016</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/zvanec-three-turtles.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/zvanec-three-turtles.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Званец. Тры чарапахі</span> / Zvanec. Three turtles, pencil, 2016</figcaption>
-        </figure>
-        <figure>
-            <a class="thing" href="./assets/the-forest-troll-goes-home.jpg" target="_blank">
-                <picture>
-                    <img src="./assets/the-forest-troll-goes-home.jpg" decoding="async" loading="lazy">
-                </picture>
-            </a>
-            <figcaption><span lang="be">Лясны троль ідзе дадому</span> / The forest troll goes home, charcoal, 2016</figcaption>
-        </figure>
-    </div>
-</main>
-<footer>
-    <p>All images copyright Artur Basak. <br> All rights reserved.</p>
-</footer>
 </body>
 </html>
