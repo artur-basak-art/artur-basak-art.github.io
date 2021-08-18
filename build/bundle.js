@@ -1288,6 +1288,16 @@ var app = (function () {
 
     const data = [
       {
+        imgUrl: "/swampmonster.png",
+        title: "Балотнік",
+        title_eng: "Balotnik, Swamp Monster",
+      },
+      {
+        imgUrl: "/nightwraith.png",
+        title: "Крыкса, Паўночніца, Бессань",
+        title_eng: "Kriksa, Nightwraith",
+      },
+      {
         imgUrl: "/chort.png",
         title: "Чорт, Бес",
         title_eng: "Chort, Fiend, Demon",
@@ -1321,6 +1331,11 @@ var app = (function () {
         imgUrl: "/wolverine.png",
         title: "Расамаха, Расамака",
         title_eng: "Wolverine",
+      },
+      {
+        imgUrl: "/pushchavik.png",
+        title: "Пушчавік",
+        title_eng: "Puschavik, Spirit of Puscha",
       },
       {
         imgUrl: "/hatnik.png",
@@ -1480,7 +1495,7 @@ var app = (function () {
       {
         imgUrl: "/paludenica.png",
         title: "Палудніца, Палудзеніца, Ржаніца",
-        title_eng: "Noon demon",
+        title_eng: "Noon demon, Noonwraith",
       },
       {
         imgUrl: "/palevik.png",
