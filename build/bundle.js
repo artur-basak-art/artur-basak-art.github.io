@@ -1288,6 +1288,11 @@ var app = (function () {
 
     const data = [
       {
+        imgUrl: "/kaduk.png",
+        title: "Кадук",
+        title_eng: "Kaduk",
+      },
+      {
         imgUrl: "/swampmonster.png",
         title: "Балотнік",
         title_eng: "Balotnik, Swamp Monster",
@@ -1493,7 +1498,7 @@ var app = (function () {
         title_eng: "Wereboar",
       },
       {
-        imgUrl: "/paludenica.png",
+        imgUrl: "/noonwraith.png",
         title: "Палудніца, Палудзеніца, Ржаніца",
         title_eng: "Noon demon, Noonwraith",
       },
