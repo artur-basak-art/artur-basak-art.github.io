@@ -1288,6 +1288,21 @@ var app = (function () {
 
     const data = [
       {
+        imgUrl: "/werebadger.png",
+        title: "Пан Барсук, Барсукалак",
+        title_eng: "Werebadger",
+      },
+      {
+        imgUrl: "/zazovka.png",
+        title: "Зазоўка",
+        title_eng: "Zazowka",
+      },
+      {
+        imgUrl: "/deer-of-st-hubert.png",
+        title: "Алень Сьв. Губерта",
+        title_eng: "Deer of St Hubert",
+      },
+      {
         imgUrl: "/kaduk.png",
         title: "Кадук",
         title_eng: "Kaduk",
