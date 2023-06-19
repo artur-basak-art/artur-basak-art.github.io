@@ -1,6 +1,4 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://arturbasak.art/</loc>
@@ -968,15 +966,16 @@
     <loc>https://arturbasak.art/#/were-monsters/krumkalak</loc>
     <changefreq>weekly</changefreq>
 </url>
-
 <url>
     <loc>https://arturbasak.art/#/were-monsters/kunalak</loc>
     <changefreq>weekly</changefreq>
 </url>
-
 <url>
     <loc>https://arturbasak.art/#/were-monsters/barsukalak</loc>
     <changefreq>weekly</changefreq>
 </url>
-
+<url>
+    <loc>https://arturbasak.art/files/Belarusian-monsters-Part-1-forest.pdf</loc>
+    <changefreq>monthly</changefreq>
+</url>
 </urlset>
